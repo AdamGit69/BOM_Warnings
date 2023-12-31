@@ -1,0 +1,167 @@
+type: horizontal-stack
+cards:
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: sensor.YOURLOCATION_warnings
+        state: '0'
+    card:
+      type: markdown
+      content: >-
+        <center>
+
+        <ha-alert alert-type="success"> There Are No Current BOM Weather
+        Warnings<BR>
+
+        </ha-alert>
+
+        </center>  
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: sensor.YOURLOCATION_warnings
+        state: '1'
+    card:
+      type: markdown
+      content: >-
+        <center>
+
+        <ha-alert alert-type="error"> ALERT - Current BOM Warnings = 1<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [0].short_title
+        }}<BR>
+
+        </ha-alert>
+
+        </center>  
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: sensor.YOURLOCATION_warnings
+        state: '2'
+    card:
+      type: markdown
+      content: >-
+        <center>
+
+        <ha-alert alert-type="error"> ALERT - Current BOM Warnings = 2<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [0].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [1].short_title
+        }}<BR>
+
+        </ha-alert>
+
+        </center>  
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: sensor.YOURLOCATION_warnings
+        state: '3'
+    card:
+      type: markdown
+      content: >-
+        <center>
+
+        <ha-alert alert-type="error"> ALERT - Current BOM Warnings = 3<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [0].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [1].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [2].short_title
+        }}<BR>
+
+        </ha-alert>
+
+        </center>     
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: sensor.YOURLOCATION_warnings
+        state: '4'
+    card:
+      type: markdown
+      content: >-
+        <center>
+
+        <ha-alert alert-type="error"> ALERT - Current BOM Warnings = 4<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [0].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [1].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [2].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [3].short_title
+        }}<BR>
+
+        </ha-alert>
+
+        </center>  
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: sensor.YOURLOCATION_warnings
+        state: '5'
+    card:
+      type: markdown
+      content: >-
+        <center>
+
+        <ha-alert alert-type="error"> ALERT - Current BOM Warnings = 5<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [0].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [1].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [2].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [3].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [4].short_title
+        }}<BR>
+
+        </ha-alert>
+  - type: conditional
+    conditions:
+      - condition: state
+        entity: sensor.YOURLOCATION_warnings
+        state: '6'
+    card:
+      type: markdown
+      content: >-
+        <center>
+
+        <ha-alert alert-type="error"> ALERT - Current BOM Warnings = 6<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [0].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [1].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [2].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [3].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [4].short_title
+        }}<BR>
+
+        {{ state_attr("sensor.YOURLOCATION_warnings" , "warnings") [5].short_title
+        }}<BR>
+
+        </ha-alert> </center>  
